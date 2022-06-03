@@ -2,13 +2,25 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="#B79FE3"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content">
+
+
+    <View
+
+
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@+id/ivPoster"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="67dp" />
 
     <ImageView
         android:id="@+id/ivPoster"
         android:layout_width="110dp"
-        android:layout_height="wrap_content"
+        android:layout_height="180dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="0dp"
@@ -19,10 +31,10 @@
         android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
         android:layout_marginStart="3dp"
         android:layout_toEndOf="@+id/ivPoster"
         android:textSize="20sp"
+        android:textStyle="bold"
         tools:text="Fantastic Beasts: The Secrets of Dumbledore" />
 
     <TextView
@@ -31,11 +43,11 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/tvTitle"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="-294dp"
-        android:layout_marginEnd="6dp"
-        android:layout_marginBottom="294dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="7dp"
         android:layout_toEndOf="@+id/ivPoster"
+        android:ellipsize="end"
+        android:maxLines="20"
         tools:text="Professor Albus Dumbledore knows the powerful, dark wizard Gellert Grindelwald is moving to seize control of the wizarding world. Unable to stop him alone, he entrusts magizoologist Newt Scamander to lead an intrepid team of wizards and witches. They soon encounter an array of old and new beasts as they clash with Grindelwald's growing legion of followers." />
 </RelativeLayout>
